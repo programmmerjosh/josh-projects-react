@@ -23,7 +23,7 @@ import google from '../faBrandIcons/google.svg';
 
 // and find out what stack I used for my CS50 psets referenced in my projects
 
-export function CreateSvg(props) {
+export function FaIcon(props) {
     return <img src={props.svg} className="faIcon" alt={props.alt} />
 }
 
@@ -37,7 +37,7 @@ const myProjects = [
         imageUrl: "",
         gitHubUrl: "https://github.com/programmmerjosh/goal_symmetry-public",
         directLinkUrl: "https://www.sagaciousapps.com/apps",
-        faSvgs: [flutter, dart, xcode],
+        iconSvgs: [flutter, dart, xcode],
     },
     {
         id: 2,
@@ -48,7 +48,7 @@ const myProjects = [
         imageUrl: "",
         gitHubUrl: "https://github.com/programmmerjosh/sagacious-apps",
         directLinkUrl: "https://www.sagaciousapps.com",
-        faSvgs: [html, css, jquery, bootstrap],
+        iconSvgs: [html, css, jquery, bootstrap],
     },
     {
         id: 3,
@@ -59,7 +59,7 @@ const myProjects = [
         imageUrl: "",
         gitHubUrl: "https://github.com/programmmerjosh/freelancer2021",
         directLinkUrl: "https://www.developerforlife.com",
-        faSvgs: [html, css, jquery, bootstrap],
+        iconSvgs: [html, css, jquery, bootstrap],
     },
     {
         id: 4,
@@ -70,7 +70,7 @@ const myProjects = [
         imageUrl: "",
         gitHubUrl: "https://github.com/programmmerjosh/programmmerjosh.github.io",
         directLinkUrl: "https://www.joshua-resume.com",
-        faSvgs: [html, css, jquery, bootstrap],
+        iconSvgs: [html, css, jquery, bootstrap],
     },
     {
         id: 5,
@@ -81,7 +81,7 @@ const myProjects = [
         imageUrl: "",
         gitHubUrl: "https://github.com/programmmerjosh/josh-blog",
         directLinkUrl: "https://www.think-write-grow.com",
-        faSvgs: [html, css, jquery, bootstrap],
+        iconSvgs: [html, css, jquery, bootstrap],
     },
     {
         id: 6,
@@ -92,7 +92,7 @@ const myProjects = [
         imageUrl: "",
         gitHubUrl: "",
         directLinkUrl: "https://apps.apple.com/gb/app/ready-set-goals/id1200446891",
-        faSvgs: [swift, xcode],
+        iconSvgs: [swift, xcode],
     },
     {
         id: 7,
@@ -103,7 +103,7 @@ const myProjects = [
         imageUrl: "",
         gitHubUrl: "",
         directLinkUrl: "https://apps.apple.com/gb/app/socks-bill-assigning-tool/id1193167667",
-        faSvgs: [swift, xcode],
+        iconSvgs: [swift, xcode],
     },
     {
         id: 8,
@@ -114,7 +114,7 @@ const myProjects = [
         imageUrl: "",
         gitHubUrl: "https://github.com/programmmerjosh/BootstrapToWordPress",
         directLinkUrl: "https://www.udemy.com/course/bootstrap-to-wordpress/",
-        faSvgs: [html, css, jquery, wordpress, bootstrap],
+        iconSvgs: [html, css, jquery, wordpress, bootstrap],
     },
     {
         id: 9,
@@ -125,7 +125,7 @@ const myProjects = [
         imageUrl: "",
         gitHubUrl: "",
         directLinkUrl: "https://apps.apple.com/gb/app/norris-25/id1201671410",
-        faSvgs: [swift, xcode],
+        iconSvgs: [swift, xcode],
     },
     {
         id: 10,
@@ -136,7 +136,7 @@ const myProjects = [
         imageUrl: "",
         gitHubUrl: "",
         directLinkUrl: "",
-        faSvgs: [html, css, jquery, bootstrap],
+        iconSvgs: [html, css, jquery, bootstrap],
     },
     {
         id: 11,
@@ -147,7 +147,7 @@ const myProjects = [
         imageUrl: "",
         gitHubUrl: "",
         directLinkUrl: "",
-        faSvgs: [html, css, jquery, bootstrap],
+        iconSvgs: [html, css, jquery, bootstrap],
     },
     {
         id: 12,
@@ -158,7 +158,7 @@ const myProjects = [
         imageUrl: "",
         gitHubUrl: "",
         directLinkUrl: "",
-        faSvgs: [html, css, jquery, bootstrap],
+        iconSvgs: [html, css, jquery, bootstrap],
     },
     {
         id: 13,
@@ -169,7 +169,7 @@ const myProjects = [
         imageUrl: "",
         gitHubUrl: "",
         directLinkUrl: "",
-        faSvgs: [html, css, jquery, bootstrap],
+        iconSvgs: [html, css, jquery, bootstrap],
     },
     {
         id: 14,
@@ -180,7 +180,7 @@ const myProjects = [
         imageUrl: "",
         gitHubUrl: "",
         directLinkUrl: "",
-        faSvgs: [html, css, jquery, bootstrap],
+        iconSvgs: [html, css, jquery, bootstrap],
     },
     {
         id: 15,
@@ -191,7 +191,7 @@ const myProjects = [
         imageUrl: "",
         gitHubUrl: "",
         directLinkUrl: "",
-        faSvgs: [swift, xcode, ml],
+        iconSvgs: [swift, xcode, ml],
     },
     {
         id: 16,
@@ -202,7 +202,7 @@ const myProjects = [
         imageUrl: "",
         gitHubUrl: "",
         directLinkUrl: "",
-        faSvgs: [swift, xcode, ml],
+        iconSvgs: [swift, xcode, ml],
     },
     {
         id: 17,
@@ -213,7 +213,7 @@ const myProjects = [
         imageUrl: "",
         gitHubUrl: "",
         directLinkUrl: "",
-        faSvgs: [swift, xcode],
+        iconSvgs: [swift, xcode],
     },
     {
         id: 18,
@@ -224,7 +224,7 @@ const myProjects = [
         imageUrl: "",
         gitHubUrl: "",
         directLinkUrl: "",
-        faSvgs: [swift, xcode],
+        iconSvgs: [swift, xcode],
     },
     {
         id: 19,
@@ -235,7 +235,7 @@ const myProjects = [
         imageUrl: "",
         gitHubUrl: "",
         directLinkUrl: "",
-        faSvgs: [swift, xcode],
+        iconSvgs: [swift, xcode],
     },
     {
         id: 20,
@@ -246,7 +246,7 @@ const myProjects = [
         imageUrl: "",
         gitHubUrl: "",
         directLinkUrl: "",
-        faSvgs: [c],
+        iconSvgs: [c],
     },
     {
         id: 21,
@@ -257,7 +257,7 @@ const myProjects = [
         imageUrl: "",
         gitHubUrl: "",
         directLinkUrl: "",
-        faSvgs: [c],
+        iconSvgs: [c],
     },
     {
         id: 22,
@@ -268,7 +268,7 @@ const myProjects = [
         imageUrl: "",
         gitHubUrl: "",
         directLinkUrl: "",
-        faSvgs: [php],
+        iconSvgs: [php],
     },
     {
         id: 23,
@@ -279,7 +279,7 @@ const myProjects = [
         imageUrl: "",
         gitHubUrl: "",
         directLinkUrl: "",
-        faSvgs: [google],
+        iconSvgs: [google],
     },
     {
         id: 24,
@@ -290,7 +290,7 @@ const myProjects = [
         imageUrl: "",
         gitHubUrl: "",
         directLinkUrl: "",
-        faSvgs: [html, css, react],
+        iconSvgs: [html, css, react],
     },
     {
         id: 25,
@@ -301,7 +301,7 @@ const myProjects = [
         imageUrl: "",
         gitHubUrl: "",
         directLinkUrl: "",
-        faSvgs: [html, css, react, bootstrap],
+        iconSvgs: [html, css, react, bootstrap],
     },
     {
         id: 26,
@@ -312,7 +312,7 @@ const myProjects = [
         imageUrl: "",
         gitHubUrl: "",
         directLinkUrl: "",
-        faSvgs: [html, css, react],
+        iconSvgs: [html, css, react],
     },
     {
         id: 27,
@@ -323,7 +323,7 @@ const myProjects = [
         imageUrl: "",
         gitHubUrl: "",
         directLinkUrl: "",
-        faSvgs: [html, css, js],
+        iconSvgs: [html, css, js],
     },
     {
         id: 28,
@@ -334,7 +334,7 @@ const myProjects = [
         imageUrl: "",
         gitHubUrl: "",
         directLinkUrl: "",
-        faSvgs: [html, css, react, bootstrap],
+        iconSvgs: [html, css, react, bootstrap],
     },
 ];
 export default myProjects;

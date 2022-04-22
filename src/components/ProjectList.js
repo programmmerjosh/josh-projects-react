@@ -16,7 +16,7 @@ function ProjectList(props) {
             key={project.id} id={project.id} title={project.title} 
             description={project.description} imageUrl={project.imageUrl}
             gitHubUrl={project.gitHubUrl} directLinkUrl={project.directLinkUrl}
-            faSvgs={project.faSvgs} source={project.source}
+            iconSvgs={project.iconSvgs} source={project.source}
             />))
     })
 
