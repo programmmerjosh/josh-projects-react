@@ -33,7 +33,7 @@ const myProjects = [
         source: "Josh",
         title: "Goal Symmetry",
         description: "Josh wanted to create the ultimate goal setting, self-studying, personal development blueprint tool. So, here it is! He's also got some exciting updates already lined up for 2022. Available on App Store AND Play Store.",
-        imageUrl: "",  // TODO
+        imageUrl: "./assets/img/GoalSymmetryDreamsHomeScreen.png",
         gitHubUrl: "https://github.com/programmmerjosh/goal_symmetry-public",
         directLinkUrl: "https://www.sagaciousapps.com/apps",
         iconSvgs: [flutter, dart, xcode, firebase, api],
@@ -44,7 +44,7 @@ const myProjects = [
         source: "Josh",
         title: "Sagacious Apps LTD",
         description: "Business website of a mobile application development limited company. Josh actually started this company himself in October 2021.",
-        imageUrl: "",  // TODO
+        imageUrl: "./assets/img/sagaciousApps.png",
         gitHubUrl: "https://github.com/programmmerjosh/sagacious-apps",
         directLinkUrl: "https://www.sagaciousapps.com",
         iconSvgs: [html, css, jquery, bootstrap],
@@ -55,7 +55,7 @@ const myProjects = [
         source: "Josh",
         title: "Freelancer Website",
         description: "Web developer freelancer website built for and by myself.",
-        imageUrl: "",  // TODO
+        imageUrl: "./assets/img/freelancer.png",
         gitHubUrl: "https://github.com/programmmerjosh/freelancer2021",
         directLinkUrl: "https://www.developerforlife.com",
         iconSvgs: [html, css, jquery, bootstrap],
@@ -66,7 +66,7 @@ const myProjects = [
         source: "Josh",
         title: "Résumé",
         description: "Résumé/portfolio website built for and by myself. Every developer needs a portfolio to showcase and demonstrate some skills and previous projects, so here you go.",
-        imageUrl: "",  // TODO
+        imageUrl: "./assets/img/josh-resume.png",
         gitHubUrl: "https://github.com/programmmerjosh/programmmerjosh.github.io",
         directLinkUrl: "https://www.joshua-resume.com",
         iconSvgs: [html, css, jquery, bootstrap],
@@ -77,7 +77,7 @@ const myProjects = [
         source: "Josh",
         title: "Truth & Critical Thinking",
         description: "When you've got or you've discovered something important to share with the world, you should share it. This website was built specifically for the purpose of sharing factual and/or experiential information however controversial some of it may be. Check it out.",
-        imageUrl: "",  // TODO
+        imageUrl: "./assets/img/joshBlog.png",
         gitHubUrl: "https://github.com/programmmerjosh/josh-blog",
         directLinkUrl: "https://www.think-write-grow.com",
         iconSvgs: [html, css, jquery, bootstrap],
@@ -88,7 +88,7 @@ const myProjects = [
         source: "Josh",
         title: "Ready Set Goals",
         description: "If you saw Goal Symmetry, Ready Set Goals is where it all started. This was Josh's first goal setting app. It's not quite as nifty and feature full as Goal Symmetry, but it works. Available on the App Store.",
-        imageUrl: "",  // TODO
+        imageUrl: "./assets/img/readySetGoals.png",
         gitHubUrl: "https://github.com/programmmerjosh/ready-set-goals-public",
         directLinkUrl: "https://apps.apple.com/gb/app/ready-set-goals/id1200446891",
         iconSvgs: [swift, xcode, realm],
@@ -99,7 +99,7 @@ const myProjects = [
         source: "Josh",
         title: "Socks - Bill Assigning Tool",
         description: "Socks - Bill Assigning Tool is exactly what it sounds like. It's an application that simplifies the process of assigning the amounts each person needs to contribute towards the restaurant check/bill. Available on the App Store.",
-        imageUrl: "",  // TODO
+        imageUrl: "./assets/img/socksBillAssigningTool.png",
         gitHubUrl: "https://github.com/programmmerjosh/sock-bill-assigning-tool-public",
         directLinkUrl: "https://apps.apple.com/gb/app/socks-bill-assigning-tool/id1193167667",
         iconSvgs: [swift, xcode],
@@ -110,7 +110,7 @@ const myProjects = [
         source: "Course",
         title: "Bootstrap To Wordpress",
         description: "A static webpage (HTML, CSS, JS & Bootstrap) converted into a dynamic WordPress site.",
-        imageUrl: "",  // TODO
+        imageUrl: "./assets/img/BootstrapToWordpress.png",
         gitHubUrl: "https://github.com/programmmerjosh/BootstrapToWordPress",
         directLinkUrl: "https://www.udemy.com/course/bootstrap-to-wordpress/",
         iconSvgs: [html, css, jquery, wordpress, bootstrap],
@@ -121,7 +121,7 @@ const myProjects = [
         source: "Josh",
         title: "Norris 25",
         description: "Norris 25 was one of Josh's very first apps. Norris 25 is a survey/questionaire type app. It serves the user with several questions on a particular topic and the then calculates the user's score based on their answers. Available on the App Store.",
-        imageUrl: "",  // TODO
+        imageUrl: "./assets/img/norris25.png",
         gitHubUrl: "https://github.com/programmmerjosh/norris25-public",
         directLinkUrl: "https://apps.apple.com/gb/app/norris-25/id1201671410",
         iconSvgs: [swift, xcode],
@@ -132,7 +132,7 @@ const myProjects = [
         source: "Course",
         title: "LoopLab",
         description: "This is a Bootstrap Theme - followed & coded along with the course.",
-        imageUrl: "",  // TODO
+        imageUrl: "./assets/img/Looplab-min.png",
         gitHubUrl: "https://github.com/programmmerjosh/Looplab-Bootstrap-theme",
         directLinkUrl: "https://www.udemy.com/course/bootstrap-4-from-scratch-with-5-projects/",
         iconSvgs: [html, css, jquery, bootstrap],
@@ -143,7 +143,7 @@ const myProjects = [
         source: "Course",
         title: "Mizuxe",
         description: "This is a Bootstrap Theme - followed & coded along with the course.",
-        imageUrl: "",  // TODO
+        imageUrl: "./assets/img/mizuxe-min.png",
         gitHubUrl: "https://github.com/programmmerjosh/Mizuxe-Bootstrap-theme",
         directLinkUrl: "https://www.udemy.com/course/bootstrap-4-from-scratch-with-5-projects/",
         iconSvgs: [html, css, jquery, bootstrap],
@@ -154,7 +154,7 @@ const myProjects = [
         source: "Course",
         title: "Blogen",
         description: "This is a Bootstrap Theme - followed & coded along with the course.",
-        imageUrl: "",  // TODO
+        imageUrl: "./assets/img/blogen-min.png",
         gitHubUrl: "https://github.com/programmmerjosh/Blogen-Bootstrap-theme",
         directLinkUrl: "https://www.udemy.com/course/bootstrap-4-from-scratch-with-5-projects/",
         iconSvgs: [html, css, jquery, bootstrap],
@@ -165,7 +165,7 @@ const myProjects = [
         source: "Course",
         title: "Glozzom",
         description: "This is a Bootstrap Theme - followed & coded along with the course.",
-        imageUrl: "",  // TODO
+        imageUrl: "./assets/img/glozzom-min.png",
         gitHubUrl: "https://github.com/programmmerjosh/Glozzom-Bootstrap-theme",
         directLinkUrl: "https://www.udemy.com/course/bootstrap-4-from-scratch-with-5-projects/",
         iconSvgs: [html, css, jquery, bootstrap],
@@ -176,7 +176,7 @@ const myProjects = [
         source: "Course",
         title: "Portfoligrid",
         description: "This is a Bootstrap Theme - followed & coded along with the course.",
-        imageUrl: "",  // TODO
+        imageUrl: "./assets/img/portfoliogrid-min.png",
         gitHubUrl: "https://github.com/programmmerjosh/Portfoligrid-Bootstrap-theme",
         directLinkUrl: "https://www.udemy.com/course/bootstrap-4-from-scratch-with-5-projects/",
         iconSvgs: [html, css, jquery, bootstrap],
@@ -187,7 +187,7 @@ const myProjects = [
         source: "Course",
         title: "Twittermenti",
         description: "This app produces a response based on twitter responses from real people. Machine Learning technology.",
-        imageUrl: "",  // TODO
+        imageUrl: "./assets/img/twittermenti-min.png",
         gitHubUrl: "https://github.com/programmmerjosh/Twittermenti",
         directLinkUrl: "https://www.udemy.com/course/ios-13-app-development-bootcamp/",
         iconSvgs: [swift, xcode, ml],
@@ -198,7 +198,7 @@ const myProjects = [
         source: "Course",
         title: "Seefood",
         description: "Take a photo and the app will tell you if the main object in the picture is a hotdog or not. Machine Learning technology. This app was cloned from an episode of the popular series, Silicon Valley.",
-        imageUrl: "",  // TODO
+        imageUrl: "./assets/img/seefood-min.png",
         gitHubUrl: "https://github.com/programmmerjosh/Seefood",
         directLinkUrl: "https://www.udemy.com/course/ios-13-app-development-bootcamp/",
         iconSvgs: [swift, xcode, ml],
@@ -209,7 +209,7 @@ const myProjects = [
         source: "Course",
         title: "Clima Clone",
         description: "A cloned version of a weather app called Clima. Uses the weather-map api.",
-        imageUrl: "",  // TODO
+        imageUrl: "./assets/img/clima-min.png",
         gitHubUrl: "https://github.com/programmmerjosh/Clima",
         directLinkUrl: "https://www.udemy.com/course/ios-13-app-development-bootcamp/",
         iconSvgs: [swift, xcode, api],
@@ -220,7 +220,7 @@ const myProjects = [
         source: "Course",
         title: "Todoey Clone",
         description: "A cloned version of the popular Todoey - ToDo list app.",
-        imageUrl: "",  // TODO
+        imageUrl: "./assets/img/todoey-min.png",
         gitHubUrl: "https://github.com/programmmerjosh/Todoey",
         directLinkUrl: "https://www.udemy.com/course/ios-13-app-development-bootcamp/",
         iconSvgs: [swift, xcode, coreData],
@@ -231,7 +231,7 @@ const myProjects = [
         source: "Course",
         title: "Flappy Bird Clone",
         description: "A cloned version of the famous Flappy Bird mobile app.",
-        imageUrl: "",  // TODO
+        imageUrl: "./assets/img/flappybird-min.png",
         gitHubUrl: "https://github.com/programmmerjosh/FlappyBird",
         directLinkUrl: "https://www.udemy.com/course/ios-13-app-development-bootcamp/",
         iconSvgs: [swift, xcode],
@@ -242,7 +242,7 @@ const myProjects = [
         source: "Course",
         title: "Spell Checker",
         description: "CS50 Problem Set 5: Implementing a spell checker",
-        imageUrl: "",  // TODO
+        imageUrl: "./assets/img/spellchecker-min.png",
         gitHubUrl: "https://github.com/programmmerjosh/cs50-pset5",
         directLinkUrl: "https://discover.edx.org/xgs/course/introduction-computer-science-harvardx-cs50x?hs-referral=Course-Card&hsLang=en",
         iconSvgs: [c],
@@ -253,7 +253,7 @@ const myProjects = [
         source: "Course",
         title: "Basic Web Server",
         description: "CS50 Problem Set 6: Implementing a web server.",
-        imageUrl: "",  // TODO
+        imageUrl: "./assets/img/webserver-min.png",
         gitHubUrl: "https://github.com/programmmerjosh/cs50-pset6",
         directLinkUrl: "https://discover.edx.org/xgs/course/introduction-computer-science-harvardx-cs50x?hs-referral=Course-Card&hsLang=en",
         iconSvgs: [c, html, php],
@@ -262,9 +262,9 @@ const myProjects = [
         id: 22,
         type: "Web Application",
         source: "Course",
-        title: "Stocks & Shares",
+        title: "Finance",
         description: "CS50 Problem Set 7: A mock website that allows you to buy fake amounts of stocks and shares using fake money.",
-        imageUrl: "",  // TODO
+        imageUrl: "./assets/img/finance-min.png",
         gitHubUrl: "https://github.com/programmmerjosh/cs50-pset7",
         directLinkUrl: "https://discover.edx.org/xgs/course/introduction-computer-science-harvardx-cs50x?hs-referral=Course-Card&hsLang=en",
         iconSvgs: [php, mysql, html, css],
@@ -275,7 +275,7 @@ const myProjects = [
         source: "Course",
         title: "Google Maps Feature",
         description: "CS50 Problem Set 8: A mashup of Google Maps and Google News",
-        imageUrl: "",  // TODO
+        imageUrl: "./assets/img/googlemapsfeature-min.png",
         gitHubUrl: "https://github.com/programmmerjosh/cs50-pset8",
         directLinkUrl: "https://discover.edx.org/xgs/course/introduction-computer-science-harvardx-cs50x?hs-referral=Course-Card&hsLang=en",
         iconSvgs: [php, api, html, css],
@@ -286,7 +286,7 @@ const myProjects = [
         source: "Course",
         title: "React & Firebase Intorduction",
         description: "Add meetup locations to firebase DB, fetch those locations and display favorites.",
-        imageUrl: "",  // TODO
+        imageUrl: "./assets/img/reactFirebaseCrud-min.png",
         gitHubUrl: "https://github.com/programmmerjosh/react-firebase-crud",
         directLinkUrl: "https://www.udemy.com/course/react-the-complete-guide-incl-redux/",
         iconSvgs: [html, css, react, firebase],
@@ -297,7 +297,7 @@ const myProjects = [
         source: "Course",
         title: "React & Bootstrap Tutorial",
         description: "Simple tutorial I found I YouTube on how to add Bootstrap to a React App",
-        imageUrl: "",  // TODO
+        imageUrl: "./assets/img/reactBootstrapTutorial-min.png",
         gitHubUrl: "https://github.com/programmmerjosh/react-bootstrap-tutorial",
         directLinkUrl: "https://www.youtube.com/watch?v=8pKjULHzs0s",
         iconSvgs: [html, css, react, bootstrap],
@@ -308,7 +308,7 @@ const myProjects = [
         source: "Course",
         title: "Keeper App Clone",
         description: "Keeper note taking web app clone. No backend implemented.",
-        imageUrl: "",  // TODO
+        imageUrl: "./assets/img/keeperClone-min.png",
         gitHubUrl: "https://github.com/programmmerjosh/keeper-app-clone",
         directLinkUrl: "https://www.udemy.com/course/the-complete-web-development-bootcamp/",
         iconSvgs: [html, css, react],
@@ -319,7 +319,7 @@ const myProjects = [
         source: "Course",
         title: "Simple Drum Kit",
         description: "SPA that a user can interact with by clicking on buttons OR pressing specific keyboard keys to produce a particular drum sound",
-        imageUrl: "",  // TODO
+        imageUrl: "./assets/img/simpleDrumKit-min.png",
         gitHubUrl: "https://github.com/programmmerjosh/SimpleDrumKit",
         directLinkUrl: "https://www.udemy.com/course/the-complete-web-development-bootcamp/",
         iconSvgs: [html, css, js],
@@ -330,9 +330,9 @@ const myProjects = [
         source: "Josh",
         title: "Josh's Projects",
         description: "React app that displays my portfolio projects",
-        imageUrl: "",  // TODO
-        gitHubUrl: "", // TODO
-        directLinkUrl: "",
+        imageUrl: "./assets/img/",  // TODO
+        gitHubUrl: "https://github.com/programmmerjosh/josh-projects-react",
+        directLinkUrl: "", // TODO
         iconSvgs: [html, css, react, bootstrap],
     },
 ];
