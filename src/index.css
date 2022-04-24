@@ -18,6 +18,16 @@ code {
   margin: 0 20px 20px 20px;
 }
 
+.icon-button {
+  width: 100%;
+}
+
+.icon-button-icon {
+  width: 2rem;
+  height: auto;
+  margin-right: 4px;
+}
+
 .project-img {
   border-radius: 10px;
   max-width: 300px;
@@ -33,4 +43,15 @@ code {
 .proj-card {
   border-radius: 10px;
   border: 6px solid rgb(7, 176, 176);
+}
+
+.icon-button-a .icon-button h5 {
+  font-size: 0.9rem;
+  color:rgb(107, 123, 123);
+}
+
+.icon-button-a .icon-button h5:hover,
+.icon-button-a:hover  {
+  font-weight: bold;
+  color:rgb(140, 61, 69);
 }

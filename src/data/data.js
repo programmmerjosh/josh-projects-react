@@ -267,7 +267,7 @@ const myProjects = [
     },
     {
         id: 20,
-        type: "Terminal Application",
+        type: "Command-Line Application",
         source: "Course",
         title: "Spell Checker",
         description: "CS50 Problem Set 5: Implementing a spell checker",

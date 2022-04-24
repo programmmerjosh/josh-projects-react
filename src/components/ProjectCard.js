@@ -1,22 +1,17 @@
 import { FaIcon } from '../data/data';
-import { Row, Col, Card, Anchor } from 'react-bootstrap';
+import { Row, Col, Card } from 'react-bootstrap';
+import IconButton from './IconButton';
+import github from '../faBrandIcons/github.svg';
+import plane from '../faBrandIcons/paper-plane-solid.svg';
 
 function ProjectCard(props) {
-
-    // incoming props:
-    // props.description
-    // props.imageUrl
-    // props.gitHubUrl
-    // props.directLinkUrl
-    // props.iconSvgs
-    // props.source
+    // incoming props: description, imageUrl, gitHubUrl, directLinkUrl, iconSvgs, source
 
     const projectColor = props.source === "Personal" ? {color: "#786CA4"} : props.source === 'Client' ? {color: "#6912EB"} : {color: "#AB3535"};
     const projectEmoji = props.source === 'Personal' ? '⭐' : props.source === 'Client' ? '💼' : '📚';
 
     return <div className='proj-card'>
-        <Card>
-    
+    <Card>
     {/* title */}
     <h6 style={projectColor} key={props.id}>{props.title}</h6>
 
@@ -34,11 +29,11 @@ function ProjectCard(props) {
                 <p className="lead pt-1 px-5 pb-5">{props.description}</p>
             </Row>
 
-            <Row>
+            <Row className="mb-5">
                 {/* links */}
                 <Col className=" d-flex justify-content-around">
-                <Anchor><img src="" alt="github icon" /></Anchor>
-                <Anchor><img src="" alt="direct link icon" /></Anchor>
+                <IconButton icon={github} text="View on GitHub" href={props.gitHubUrl} />
+                {props.directLinkUrl !== "" && <IconButton icon={plane} text={props.source === "Course" ? "View Course" : "View Project Live"} href={props.directLinkUrl} />}
                 </Col>
             </Row>
         </Col>
@@ -49,5 +44,5 @@ function ProjectCard(props) {
     </Row>
     </Card>
     </div>;
-    }
+}
 export default ProjectCard;
