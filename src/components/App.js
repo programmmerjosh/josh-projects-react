@@ -7,6 +7,7 @@ import CategoryList from './CategoryList';
 import ProjectTitles from './ProjectTitles';
 import downarrow from '../faBrandIcons/chevron-down-solid.svg';
 import ProjectCard from './ProjectCard';
+import cancel from '../faBrandIcons/ban-solid.svg';
 
 function App() {
 
@@ -25,9 +26,17 @@ function App() {
     setId(id);
   }
 
+  function reset() {
+    setProject(null);
+    setId(null);
+    setCategory("");
+  }
+
   return (
     <div className="App">
+      
       <header className="App-header">
+        <button className='cancel' onClick={reset}><img className='icon-button-icon red' src={cancel} alt="cancel icon" /></button>
         <img src={logo} className="App-logo" alt="logo" />
         <h3>
           Josh's Projects ~ React Bootstrap Web App
@@ -45,5 +54,4 @@ function App() {
     </div>
   );
 }
-
 export default App;

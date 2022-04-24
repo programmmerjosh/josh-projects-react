@@ -59,3 +59,15 @@ code {
 .lead {
   color: black;
 }
+
+.red {
+  filter: invert(16%) sepia(93%) saturate(6311%) hue-rotate(358deg) brightness(112%) contrast(119%);
+}
+
+.cancel {
+  background: none;
+  border: 0;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}

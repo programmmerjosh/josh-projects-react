@@ -50,6 +50,7 @@ import reactFirebase from '../assets/img/reactFirebaseCrud-min.png';
 import reactBootstrap from '../assets/img/reactBootstrapTutorial-min.png';
 import keeper from '../assets/img/keeperClone-min.png';
 import drumKit from '../assets/img/simpleDrumKit-min.png';
+import joshprojects from '../assets/img/joshprojects-min.png';
 
 export function FaIcon(props) {
     return <img src={props.svg} className="faIcon" alt={props.alt} />
@@ -359,7 +360,7 @@ const myProjects = [
         source: "Personal",
         title: "Josh Projects (React)",
         description: "React app that displays my portfolio projects",
-        imageUrl: "../assets/img/",  // TODO
+        imageUrl: joshprojects,
         gitHubUrl: "https://github.com/programmmerjosh/josh-projects-react",
         directLinkUrl: "", // TODO
         iconSvgs: [html, css, react, bootstrap],
