@@ -12,12 +12,12 @@ function ProjectList(props) {
         display.push(<ProjectTitle key={category} text={category}/>);
         props.dataList.map(project => 
             project.type === category && 
-            display.push(<ProjectCard 
-            key={project.id} id={project.id} title={project.title} 
+            display.push(<div key={project.id} id={project.id} className="p-5"><ProjectCard 
+              title={project.title} 
             description={project.description} imageUrl={project.imageUrl}
             gitHubUrl={project.gitHubUrl} directLinkUrl={project.directLinkUrl}
             iconSvgs={project.iconSvgs} source={project.source}
-            />))
+            /></div>))
     })
 
     return <div>{display}</div>;
