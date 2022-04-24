@@ -12,14 +12,17 @@ function App() {
 
   const [category, setCategory] = useState("");
   const [project, setProject] = useState(null);
+  const [id, setId] = useState(null);
 
   function filterProjects(newCategory) {
     setProject(null);
+    setId(null);
     setCategory(newCategory);
   }
 
   function showDesiredProject(id) {
     setProject(myProjects.find(project => project.id === id));
+    setId(id);
   }
 
   return (
@@ -31,9 +34,9 @@ function App() {
         </h3>
         <CategoryList dataList={myProjects} onClick={filterProjects} selectedCategory={category}/>
         {category !== "" && <img className="faIcon mb-2" src={downarrow} alt="downward arrow" />}
-        {category !== "" && <ProjectTitles dataList={myProjects.filter(project => project.type === category)} onClick={showDesiredProject}/>}
+        {category !== "" && <ProjectTitles dataList={myProjects.filter(project => project.type === category)} onClick={showDesiredProject} selectedId={id} />}
         {project !== null && <img className="faIcon mb-2" src={downarrow} alt="downward arrow" />}
-        <div className='container'>
+        <div className='container mb-5'>
         {project !== null && <ProjectCard description={project.description} imageUrl={project.imageUrl} 
         gitHubUrl={project.gitHubUrl} directLinkUrl={project.directLinkUrl} iconSvgs={project.iconSvgs} 
         source={project.source} />}

@@ -15,7 +15,7 @@ function CategoryList(props) {
     
     categories.forEach(category => {
         categoryButtons.push(<Button className="mx-1 mb-2" key={category} 
-        variant={props.selectedCategory === category ? "secondary" : "success" } 
+        variant={props.selectedCategory === category ? "info" : "dark" } 
         onClick={() => handleClick(category)}>{category}(s)</Button>);
     })
 
