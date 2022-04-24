@@ -55,3 +55,7 @@ code {
   font-weight: bold;
   color:rgb(140, 61, 69);
 }
+
+.lead {
+  color: black;
+}

@@ -9,6 +9,7 @@ function ProjectCard(props) {
 
     const projectColor = props.source === "Personal" ? {color: "#786CA4"} : props.source === 'Client' ? {color: "#6912EB"} : {color: "#AB3535"};
     const projectEmoji = props.source === 'Personal' ? '⭐' : props.source === 'Client' ? '💼' : '📚';
+    const icons = props.iconSvgs ?? [];
 
     return <div className='proj-card'>
     <Card>
@@ -40,7 +41,7 @@ function ProjectCard(props) {
     </Row>
     <Row>
         {/* stack */}
-        <Col>{props.iconSvgs.map(svg => <FaIcon key={props.title + svg} svg={svg} alt="icon" />)}</Col>
+        <Col>{icons.map(svg => icons.length > 0 ? <FaIcon key={props.title + svg} svg={svg} alt="icon" /> : <div />)}</Col>
     </Row>
     </Card>
     </div>;

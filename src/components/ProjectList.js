@@ -1,5 +1,4 @@
 import ProjectCard from "./ProjectCard";
-// import ProjectTitles from "./ProjectTitles";
 
 function ProjectList(props) {
 
@@ -9,7 +8,6 @@ function ProjectList(props) {
     
     var display = [];
     categories.forEach(category => {
-        // display.push(<ProjectTitles key={category} text={category}/>);
         props.dataList.map(project => 
             project.type === category && 
             display.push(<div key={project.id} id={project.id} className="p-5"><ProjectCard 
