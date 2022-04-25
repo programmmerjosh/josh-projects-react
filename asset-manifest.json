@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/josh-projects-react/static/css/main.5b6674a1.css",
-    "main.js": "/josh-projects-react/static/js/main.53c180f8.js",
+    "main.css": "/josh-projects-react/static/css/main.cc6549d1.css",
+    "main.js": "/josh-projects-react/static/js/main.61885b2b.js",
     "static/media/norris25.png": "/josh-projects-react/static/media/norris25.c34ffedf96018e03dd27.png",
     "static/media/socksBillAssigningTool.png": "/josh-projects-react/static/media/socksBillAssigningTool.2b1e7d2ea41c702d403b.png",
     "static/media/glozzom-min.png": "/josh-projects-react/static/media/glozzom-min.66af655573bdfa73effe.png",
@@ -55,11 +55,11 @@
     "static/media/html5.svg": "/josh-projects-react/static/media/html5.b12781148ff91e07ec729198b113b2ef.svg",
     "static/media/chevron-down-solid.svg": "/josh-projects-react/static/media/chevron-down-solid.d412cd9394e18226142d84b0d39b623f.svg",
     "static/media/flutter-svgrepo-com.svg": "/josh-projects-react/static/media/flutter-svgrepo-com.cfd1233c31199bbdea73e85253791bbb.svg",
-    "main.5b6674a1.css.map": "/josh-projects-react/static/css/main.5b6674a1.css.map",
-    "main.53c180f8.js.map": "/josh-projects-react/static/js/main.53c180f8.js.map"
+    "main.cc6549d1.css.map": "/josh-projects-react/static/css/main.cc6549d1.css.map",
+    "main.61885b2b.js.map": "/josh-projects-react/static/js/main.61885b2b.js.map"
   },
   "entrypoints": [
-    "static/css/main.5b6674a1.css",
-    "static/js/main.53c180f8.js"
+    "static/css/main.cc6549d1.css",
+    "static/js/main.61885b2b.js"
   ]
 }
