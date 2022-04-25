@@ -362,7 +362,7 @@ const myProjects = [
         description: "React app that displays my portfolio projects",
         imageUrl: joshprojects,
         gitHubUrl: "https://github.com/programmmerjosh/josh-projects-react",
-        directLinkUrl: "", // TODO
+        directLinkUrl: "https://programmmerjosh.github.io/josh-projects-react/",
         iconSvgs: [html, css, react, bootstrap],
     },
 ];
