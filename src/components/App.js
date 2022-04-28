@@ -9,9 +9,9 @@ import downarrow from "../faBrandIcons/chevron-down-solid.svg";
 import ProjectCard from "./ProjectCard";
 import cancel from "../faBrandIcons/ban-solid.svg";
 import { motion } from "framer-motion";
+import { instructionVariants, arrowVariants, projectTitleVariants, projecCardVariants } from '../data/animation-variants';
 
 function App() {
-  
   const emptyProj = {
     id: "",
     type: "",
@@ -26,47 +26,32 @@ function App() {
   const [category, setCategory] = useState("");
   const [project, setProject] = useState(emptyProj);
   const [id, setId] = useState(null);
+  const [hasCategory, setHasCategory] = useState(false);
+  const [hasProject, setHasProject] = useState(false);
 
   function filterProjects(newCategory) {
-    setProject(emptyProj);
-    setId(null);
+    resetProject();
     setCategory(newCategory);
+    setHasCategory(true);
   }
 
   function showDesiredProject(id) {
     setProject(myProjects.find((project) => project.id === id));
     setId(id);
+    setHasProject(true);
+  }
+
+  function resetProject() {
+    setProject(emptyProj);
+    setId(null);
+    setHasProject(false);
   }
 
   function reset() {
-    setProject(emptyProj);
-    setId(null);
     setCategory("");
+    resetProject();
+    setHasCategory(false);
   }
-
-  const animateInstruction1 = { opacity: category === "" ? 1 : 0 };
-
-  const animateInstruction2 = {
-    opacity: id === null && category !== "" ? 1 : 0,
-  };
-
-  const animateProjectArrow = {
-    opacity: id === null ? 1 : 0,
-    marginTop: id === null ? 0 : -15,
-    position: id === null ? "static" : "fixed",
-  };
-
-  const animateProjectTitles = {
-    opacity: category !== "" ? 1 : 0,
-    marginTop: category !== "" ? 0 : -15,
-    position: category !== "" ? "static" : "fixed",
-  };
-
-  const animateProject = {
-    opacity: id !== null ? 1 : 0,
-    marginTop: id !== null ? 0 : -15,
-    position: id !== null ? "static" : "fixed",
-  };
 
   return (
     <div className="App">
@@ -78,28 +63,36 @@ function App() {
             alt="cancel icon"
           />
         </button>
+
         <img src={logo} className="App-logo" alt="logo" />
         <h3>Josh's Projects ~ React Bootstrap Web App</h3>
-        <motion.div animate={animateInstruction1}>
+
+        {/* visible if no category selected */}
+        <motion.div variants={instructionVariants} initial="visible" animate={hasCategory ? "hidden" : "visible"}>
           <p className="small">
             Tap on any of these categories below to view projects
           </p>
         </motion.div>
 
-        <CategoryList
-          dataList={myProjects}
-          onClick={filterProjects}
-          selectedCategory={category}
-        />
-        <motion.div animate={animateProjectArrow}>
+        {/* always visible */}
+          <CategoryList
+            dataList={myProjects}
+            onClick={filterProjects}
+            selectedCategory={category}
+          />
+        
+        {/* hidden if no category selected */}
+        <motion.div variants={arrowVariants} initial="hidden" animate={!hasCategory ? "hidden" : "visible"}>
           <img className="faIcon mb-2" src={downarrow} alt="downward arrow" />
         </motion.div>
 
-        <motion.div animate={animateInstruction2}>
+        {/* visible if a category has been selected AND if no project selected */}
+        <motion.div variants={instructionVariants} initial="hidden" animate={!hasProject && hasCategory ? "visible" : "hidden"}>
           <p className="small">Tap on any of these projects below to view</p>
         </motion.div>
 
-        <motion.div animate={animateProjectTitles}>
+        {/* visible if category selected */}
+        <motion.div variants={projectTitleVariants} initial="hidden" animate={hasCategory ? "visible" : "hidden"}>
           <ProjectTitles
             dataList={myProjects.filter((project) => project.type === category)}
             onClick={showDesiredProject}
@@ -107,10 +100,11 @@ function App() {
           />
         </motion.div>
 
-        <motion.div animate={animateProject}>
+        {/* visible if project has been selected */}
+        <motion.div variants={arrowVariants} initial="hidden" animate={hasProject ? "visible" : "hidden"}>
           <img className="faIcon mb-2" src={downarrow} alt="downward arrow" />
         </motion.div>
-        <motion.div animate={animateProject} className="container mb-5">
+        <motion.div variants={projecCardVariants} initial="hidden" animate={hasProject ? "visible" : "hidden"} className="container mb-5">
           <ProjectCard
             description={project.description}
             imageUrl={project.imageUrl}
