@@ -28,17 +28,43 @@ function App() {
   const [id, setId] = useState(null);
   const [hasCategory, setHasCategory] = useState(false);
   const [hasProject, setHasProject] = useState(false);
+  const [newData, setNewData] = useState([]);
+  const [instruction1, setInstruction1] = useState(true);
+  const [instruction2, setInstruction2] = useState(false);
 
   function filterProjects(newCategory) {
-    resetProject();
-    setCategory(newCategory);
-    setHasCategory(true);
+    setInstruction1(false);
+    setInstruction2(true);
+    if (category === "") {
+      setNewData(myProjects.filter((project) => project.type === newCategory));
+      setCategory(newCategory);
+      setHasCategory(true);
+    }
+    else if (category !== newCategory) {
+      setHasCategory(false);
+      setTimeout(() => {
+        resetProject();
+        setNewData(myProjects.filter((project) => project.type === newCategory));
+        setCategory(newCategory);
+        setHasCategory(true);
+      }, 370);
+    }
   }
 
   function showDesiredProject(id) {
-    setProject(myProjects.find((project) => project.id === id));
-    setId(id);
-    setHasProject(true);
+    if (id === null) {
+      setProject(myProjects.find((project) => project.id === id));
+      setId(id);
+      setHasProject(true);
+    }
+    else if (id !== project.id) {
+      setHasProject(false);
+      setTimeout(() => {
+        setProject(myProjects.find((project) => project.id === id));
+        setId(id);
+        setHasProject(true);
+      }, 370);
+    }
   }
 
   function resetProject() {
@@ -50,6 +76,8 @@ function App() {
   function reset() {
     setCategory("");
     resetProject();
+    setInstruction1(true);
+    setInstruction2(false);
     setHasCategory(false);
   }
 
@@ -68,7 +96,7 @@ function App() {
         <h3>Josh's Projects ~ React Bootstrap Web App</h3>
 
         {/* visible if no category selected */}
-        <motion.div variants={instructionVariants} initial="visible" animate={hasCategory ? "hidden" : "visible"}>
+        <motion.div variants={instructionVariants} initial="visible" animate={instruction1 ? "visible" : "hidden"}>
           <p className="small">
             Tap on any of these categories below to view projects
           </p>
@@ -87,14 +115,14 @@ function App() {
         </motion.div>
 
         {/* visible if a category has been selected AND if no project selected */}
-        <motion.div variants={instructionVariants} initial="hidden" animate={!hasProject && hasCategory ? "visible" : "hidden"}>
+        <motion.div variants={instructionVariants} initial="hidden" animate={instruction2 ? "visible" : "hidden"}>
           <p className="small">Tap on any of these projects below to view</p>
         </motion.div>
 
         {/* visible if category selected */}
         <motion.div variants={projectTitleVariants} initial="hidden" animate={hasCategory ? "visible" : "hidden"}>
           <ProjectTitles
-            dataList={myProjects.filter((project) => project.type === category)}
+            dataList={newData}
             onClick={showDesiredProject}
             selectedId={id}
           />

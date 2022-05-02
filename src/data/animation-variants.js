@@ -26,12 +26,14 @@ export const instructionVariants = {
     hidden: {
       opacity: 0,
       zIndex: -1,
+      position: 'fixed',
       y: -30,
       transition: {type: 'spring', delay: 0.3},
     },
     visible: {
       opacity: 1,
       zIndex: 1,
+      position: 'static',
       y: 0,
       transition: {type: 'spring', delay: 0.3},
     }
